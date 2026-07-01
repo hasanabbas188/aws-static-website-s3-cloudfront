@@ -8,7 +8,7 @@ This project demonstrates hosting a static website on AWS using Amazon S3, Amazo
 
 ## Architecture
 
-![Architecture](architecture-diagram.png)
+![Architecture](Architecture-diagram.png)
 
 ## AWS Services Used
 
