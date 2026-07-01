@@ -1,0 +1,106 @@
+/* ===== General ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ===== Navigation ===== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #ffe4ec;
+    font-weight: bold;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: url('https://images.unsplash.com/photo-1520975958225-35b2b6f3c7c3') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    background: rgba(255, 105, 180, 0.6);
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 15px;
+}
+
+/* ===== Products Grid ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* ===== Product Card ===== */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.25s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.price {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+/* ===== Buttons ===== */
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff1493;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffb6c1;
+    margin-top: 20px;
+    font-weight: bold;
+}

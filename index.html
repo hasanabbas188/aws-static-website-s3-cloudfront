@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>MH Drip Co</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: #fff0f6;
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(90deg, #ff69b4, #ffb6c1);
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        background: #ffe4ec;
+        font-weight: bold;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: url('https://images.unsplash.com/photo-1520975958225-35b2b6f3c7c3') center/cover;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        background: rgba(255,105,180,0.6);
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        margin: 10px 0;
+    }
+
+    .price {
+        color: #ff69b4;
+        font-weight: bold;
+    }
+
+    button {
+        background: #ff69b4;
+        color: white;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 80%;
+    }
+
+    button:hover {
+        background: #ff1493;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #ffb6c1;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    MH DRIP CO 💖
+</header>
+
+<nav>
+    <div>Home</div>
+    <div>Shop</div>
+    <div>Cart 🛒 (<span id="cartCount">0</span>)</div>
+</nav>
+
+<section class="hero">
+    <h1>Glow Like A Queen ✨</h1>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47">
+        <h3>Pink Hoodie</h3>
+        <p class="price">$29.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37">
+        <h3>Luxury Bag</h3>
+        <p class="price">$49.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975682031-ae8d3a5b1c0a">
+        <h3>Stylish Shades</h3>
+        <p class="price">$19.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975869018-8c7f4c3a6b0f">
+        <h3>Floral Dress</h3>
+        <p class="price">$39.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 MH Drip Co | Made with 💕
+</footer>
+
+<script>
+    let cart = 0;
+
+    function addToCart() {
+        cart++;
+        document.getElementById("cartCount").innerText = cart;
+    }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
